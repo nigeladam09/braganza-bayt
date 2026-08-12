@@ -1,7 +1,7 @@
 .section {
   padding: 96px 6vw;
-  background: var(--cobalt-deep);
-  color: var(--surface);
+  background: var(--azulejo-deep);
+  color: var(--tile-white);
 }
 
 .sectionHead {
@@ -12,7 +12,7 @@
 
 .eyebrow {
   font-family: var(--font-mono), monospace;
-  color: #9db4e6;
+  color: var(--brass);
   font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -21,11 +21,11 @@
 
 .sectionHead h2 {
   font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
-  color: var(--surface);
+  color: var(--tile-white);
 }
 
 .sectionHead p {
-  color: #d3dcf2;
+  color: var(--on-dark);
   margin-top: 10px;
   font-size: 1.05rem;
 }
@@ -33,12 +33,12 @@
 .perkCallout {
   max-width: 640px;
   margin: 0 auto 28px auto;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(184, 134, 59, 0.15);
+  border: 1px solid var(--brass);
   border-radius: var(--radius);
   padding: 16px 20px;
   font-size: 0.94rem;
-  color: var(--surface);
+  color: var(--tile-white);
   line-height: 1.5;
 }
 

@@ -1,5 +1,5 @@
 .section {
-  background: var(--surface);
+  background: var(--tile-white);
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 96px;

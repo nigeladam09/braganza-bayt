@@ -1,14 +1,14 @@
 .card {
   flex: 0 0 300px;
-  background: var(--surface);
+  background: var(--tile-white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 22px;
-  border-top: 3px solid var(--cobalt);
+  border-top: 3px solid var(--brass);
 }
 
 .stars {
-  color: var(--cobalt);
+  color: var(--brass);
   font-size: 0.9rem;
   letter-spacing: 2px;
   margin-bottom: 12px;
@@ -39,7 +39,7 @@
 .propertyTag {
   font-family: var(--font-mono), monospace;
   font-size: 0.7rem;
-  color: var(--cobalt);
+  color: var(--terracotta);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }

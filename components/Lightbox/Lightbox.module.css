@@ -2,7 +2,7 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(15, 38, 87, 0.92);
+  background: rgba(18, 50, 57, 0.94);
   z-index: 1000;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@
   right: 28px;
   background: none;
   border: none;
-  color: var(--surface);
+  color: var(--tile-white);
   font-size: 2.4rem;
   line-height: 1;
   cursor: pointer;
@@ -35,9 +35,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  color: var(--surface);
+  background: rgba(247, 244, 236, 0.15);
+  border: 1px solid rgba(247, 244, 236, 0.4);
+  color: var(--tile-white);
   font-size: 1.4rem;
   width: 48px;
   height: 48px;
@@ -47,7 +47,7 @@
 }
 
 .nav:hover {
-  background: rgba(255, 255, 255, 0.26);
+  background: rgba(247, 244, 236, 0.26);
 }
 
 .prev {
@@ -63,7 +63,7 @@
   bottom: 28px;
   left: 50%;
   transform: translateX(-50%);
-  color: var(--surface);
+  color: var(--tile-white);
   font-family: var(--font-mono), monospace;
   font-size: 0.85rem;
   letter-spacing: 0.04em;
