@@ -1,0 +1,172 @@
+[
+  {
+    "path": "images/guests/guest-01.jpg",
+    "sha256": "d6c1c39e922650e00efbf62fb10063238f8e34e54e4cd6f83bb6054dd680b9ee",
+    "bytes": 55350
+  },
+  {
+    "path": "images/guests/guest-02.jpg",
+    "sha256": "e7a9b952ede852e662a4ed536168c23463a08cbaf2e7525343cbb43b5666c2c3",
+    "bytes": 56268
+  },
+  {
+    "path": "images/guests/guest-03.jpg",
+    "sha256": "4a121c545d012fd46d69b5736d4b7a848e9d81335901d1e1845bd528946e81a9",
+    "bytes": 57602
+  },
+  {
+    "path": "images/guests/guest-04.jpg",
+    "sha256": "0bfddb76db711efb2461cc193cc972f7f7bbf9c8d92fc800162271b756b26bb5",
+    "bytes": 51997
+  },
+  {
+    "path": "images/guests/guest-05.jpg",
+    "sha256": "8eb4291be41400fb2223be9743d69fb5e2c52997655d4549bb29e96d9006cefc",
+    "bytes": 55252
+  },
+  {
+    "path": "images/guests/guest-06.jpg",
+    "sha256": "308857995a8cef21fd309b182dc4af32ccd39a746c31c6acf8f2f626646cab37",
+    "bytes": 49927
+  },
+  {
+    "path": "images/guests/guest-07.jpg",
+    "sha256": "9574891b724aeb6acfaa36241db7af82a3c992fb3087f84c87bdcdfebdb2a579",
+    "bytes": 56813
+  },
+  {
+    "path": "images/guests/guest-08.jpg",
+    "sha256": "ea83858f45bf4160e04ed03004afa68e44b1552343cc2a1fb63a544854690a56",
+    "bytes": 60714
+  },
+  {
+    "path": "images/guests/guest-09.jpg",
+    "sha256": "3f3daa1803508e871c5c3eceafbfb0680e8ae2e6a37585858485e6aea6cfc156",
+    "bytes": 53087
+  },
+  {
+    "path": "images/guests/guest-10.jpg",
+    "sha256": "4439d51b6de9d91f02a43ed90a75bfd6af8e752c2549955197dd2373506f8eb3",
+    "bytes": 58658
+  },
+  {
+    "path": "images/guests/guest-11.jpg",
+    "sha256": "141e74c12f8441015999dba0d829a9ad9728122be2d9b9340211f3ca42aedb3f",
+    "bytes": 45313
+  },
+  {
+    "path": "images/guests/guest-12.jpg",
+    "sha256": "f19fb0c547dcb2919e793056c89bb50204da84278cbc434bf1d01ea4296258f1",
+    "bytes": 40282
+  },
+  {
+    "path": "images/guests/guest-13.jpg",
+    "sha256": "56909a86972d22609f77ded3022bc23555af65bd9656fa3dfbb84d3f2894c46c",
+    "bytes": 55472
+  },
+  {
+    "path": "images/guests/guest-14.jpg",
+    "sha256": "6309c5360ff2e3258785971188ddab3293a973d6c9f286fd9b093a4588604b41",
+    "bytes": 41115
+  },
+  {
+    "path": "images/guests/guest-15.jpg",
+    "sha256": "98e72cf96ab33e2a8d5590b2188d852c452e3f2d729c3ebc987d4a940866c98a",
+    "bytes": 54840
+  },
+  {
+    "path": "images/guests/guest-16.jpg",
+    "sha256": "f290e6915c399c9620b8e36ce072dc2f17150bf2a3dbe87c4a2c5965289fcb9d",
+    "bytes": 55826
+  },
+  {
+    "path": "images/hosts/amelia.jpg",
+    "sha256": "0f744bd2ab1cb84370bd448f9ae3efe54b741bc117e8179cc42f87187931021d",
+    "bytes": 24621
+  },
+  {
+    "path": "images/hosts/nigel.jpg",
+    "sha256": "e2eae053c7dff2a0930a1cf01bbbcb40aebd11af16de52b66de72f3ef9795128",
+    "bytes": 27288
+  },
+  {
+    "path": "images/kitchen/shared-kitchen.jpg",
+    "sha256": "52925244dbb4837c4984a47d9cf310a77ae7a3e5ecdeaf14b5616392bcf971c9",
+    "bytes": 131178
+  },
+  {
+    "path": "images/rooms/birdsong-nature/cover.jpg",
+    "sha256": "f2db508816247f0b715b2a438ac820ff7bdd198ad0d0f9755ec26f7e7f6d0584",
+    "bytes": 239258
+  },
+  {
+    "path": "images/rooms/birdsong-nature/extra-1.jpg",
+    "sha256": "2d153715ee82839acd81d19de0ea36cb1fda19e9764ec8298573fb6c1b6492cf",
+    "bytes": 84699
+  },
+  {
+    "path": "images/rooms/birdsong-nature/extra-2.jpg",
+    "sha256": "8b49234682ef0f581638183b25953ebd4ae4ddbfa22c82111c42db888744b5ae",
+    "bytes": 104283
+  },
+  {
+    "path": "images/rooms/olive-room/cover.jpg",
+    "sha256": "b9b7176dd9955ac2849367711f995f445928a11fc2ae9bd5249a9a5234b389d9",
+    "bytes": 287177
+  },
+  {
+    "path": "images/rooms/olive-room/extra-1.jpg",
+    "sha256": "c27a36ae1e2043bf18dfda0819d67293d22ead0661e4f415de59e7485de2445d",
+    "bytes": 81426
+  },
+  {
+    "path": "images/rooms/olive-room/extra-2.jpg",
+    "sha256": "2e049c23ba050eae22e8ae587a0887dc07746e3dce4a7134fc4ab048e47914f9",
+    "bytes": 87388
+  },
+  {
+    "path": "images/rooms/rainforest-suite/cover.jpg",
+    "sha256": "9452d13ce059b204d7df2707a19bf30a28df531acc54ed3a356389149f1954d4",
+    "bytes": 323751
+  },
+  {
+    "path": "images/rooms/rainforest-suite/extra-1.jpg",
+    "sha256": "a8eb495e94e90292eb16768b5bdb2502d0b72438d430980711cb31caa68f37d4",
+    "bytes": 102872
+  },
+  {
+    "path": "images/rooms/rainforest-suite/extra-2.jpg",
+    "sha256": "099aa61744f9edfcde75628379ba1edee0751e56ee8f024383d4efb3ce2195e0",
+    "bytes": 74643
+  },
+  {
+    "path": "images/rooms/stylish-boho/cover.jpg",
+    "sha256": "f35b5587a7bfa82075f7c1b3fef2723b2b40da75f0d105455badc48c59a1b100",
+    "bytes": 245265
+  },
+  {
+    "path": "images/rooms/stylish-boho/extra-1.jpg",
+    "sha256": "2f0c2098b1d7aa74b4c538ffc663fb25f1f269b1f14bc87cac3d4f427501e8e3",
+    "bytes": 99871
+  },
+  {
+    "path": "images/rooms/stylish-boho/extra-2.jpg",
+    "sha256": "3b473de9c0fd3a130dae7249415c94c335f5e727e9714b2b67fa1ab6b54a1748",
+    "bytes": 113136
+  },
+  {
+    "path": "images/rooms/terracotta-nest/cover.jpg",
+    "sha256": "ceb418e1f49793d524371784752631e9a8f909e6320e434c4cdebef301cd8e48",
+    "bytes": 264154
+  },
+  {
+    "path": "images/rooms/terracotta-nest/extra-1.jpg",
+    "sha256": "2797ce0900656896c1b851cce5b58f872bdf73b6fff78f8324dd86d6d365752a",
+    "bytes": 135913
+  },
+  {
+    "path": "images/rooms/terracotta-nest/extra-2.jpg",
+    "sha256": "a9d88dd194188f38c8ef96fce0f4b6714d226a7e1d1a8d3b3f51eb819eea9994",
+    "bytes": 141138
+  }
+]

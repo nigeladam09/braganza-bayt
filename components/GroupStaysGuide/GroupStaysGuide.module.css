@@ -1,0 +1,96 @@
+.section {
+  padding: 96px 6vw;
+  padding-top: 0;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.sectionHead {
+  max-width: 1050px;
+  margin-bottom: 40px;
+}
+
+.sectionHead h2 {
+  font-size: clamp(1.4rem, 1.6vw + 1rem, 2rem);
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+.sectionHead p {
+  color: var(--ink-soft);
+  margin-top: 12px;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 480px) {
+  .sectionHead h2 {
+    white-space: normal;
+    font-size: 1.5rem;
+  }
+}
+
+.guide {
+  max-width: 820px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1.4fr;
+  gap: 10px;
+  padding: 14px 20px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.rowHead {
+  background: var(--paper);
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  font-family: var(--font-mono), monospace;
+}
+
+.rowHighlight {
+  background: #eaf0fc;
+  color: var(--cobalt-deep);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
+  }
+  .row span:nth-child(2)::before {
+    content: "Guests: ";
+  }
+  .row span:nth-child(3)::before {
+    content: "Rooms needed: ";
+  }
+  .rowHead span:nth-child(2)::before,
+  .rowHead span:nth-child(3)::before {
+    content: "";
+  }
+}
+
+.wholeHouseCallout {
+  max-width: 820px;
+  background: #eaf0fc;
+  border: 1px solid var(--cobalt);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.55;
+}

@@ -1,0 +1,67 @@
+/* Design tokens — Cobalt & Porcelain system.
+   A genuine nod to Portuguese azulejo tilework (cobalt blue and white
+   porcelain, not the beige/brass palette the original draft leaned on). */
+:root {
+  --ink: #14181f;
+  --ink-soft: #565d6b;
+  --paper: #f1f3f4;
+  --surface: #ffffff;
+  --cobalt: #1b3e8c;
+  --cobalt-deep: #0f2657;
+  --cobalt-bright: #3b6fe0;
+  --line: rgba(20, 24, 31, 0.12);
+  --radius: 14px;
+  --radius-full: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  margin: 0 0 0.4em 0;
+  letter-spacing: -0.02em;
+}
+
+.mono {
+  font-family: var(--font-mono), monospace;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

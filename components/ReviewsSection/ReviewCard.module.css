@@ -1,0 +1,45 @@
+.card {
+  flex: 0 0 300px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  border-top: 3px solid var(--cobalt);
+}
+
+.stars {
+  color: var(--cobalt);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.quote {
+  font-size: 0.92rem;
+  color: var(--ink);
+  line-height: 1.5;
+  min-height: 72px;
+}
+
+.attribution {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.guestName {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.propertyTag {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  color: var(--cobalt);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}

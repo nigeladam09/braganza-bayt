@@ -1,0 +1,153 @@
+.hero {
+  background: var(--cobalt-deep);
+  color: var(--surface);
+  padding: 72px 6vw 64px 6vw;
+}
+
+.heroInner {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.copy {
+  max-width: 560px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  color: #9db4e6;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.headline {
+  font-size: clamp(1.9rem, 2.6vw + 1rem, 2.7rem);
+  line-height: 1.15;
+  color: var(--surface);
+}
+
+.tagline {
+  display: inline-block;
+  margin-top: 10px;
+  color: #9db4e6;
+  font-size: 0.56em;
+  font-weight: 600;
+}
+
+.lede {
+  font-size: 1.08rem;
+  color: #d3dcf2;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.ctaRow {
+  margin-top: 32px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 24px;
+  border-radius: var(--radius);
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btnPrimary {
+  background: var(--surface);
+  color: var(--cobalt-deep);
+}
+
+.btnPrimary:hover {
+  background: #dfe6f6;
+}
+
+.btnOutline {
+  background: transparent;
+  color: var(--surface);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.btnOutline:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hostAvatars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 6px;
+}
+
+.hostAvatarsLabel {
+  font-family: var(--font-script), cursive;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #d3dcf2;
+  margin-left: 4px;
+}
+
+.photoFrame {
+  position: relative;
+  aspect-ratio: 4 / 3.1;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.photoFrame :global(img) {
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+  .copy {
+    max-width: none;
+  }
+  .photoFrame {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 520px) {
+  .hostAvatars {
+    margin-left: 0;
+    margin-top: 6px;
+    width: 100%;
+  }
+}
+
+.tileBand {
+  height: 12px;
+  width: 100%;
+  background-image: linear-gradient(45deg, var(--surface) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--surface) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--surface) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--surface) 75%);
+  background-size: 12px 12px;
+  background-position: 0 0, 0 6px, 6px -6px, -6px 0px;
+  background-color: var(--cobalt);
+}

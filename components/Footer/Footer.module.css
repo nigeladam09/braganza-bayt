@@ -1,0 +1,60 @@
+.footer {
+  background: var(--cobalt-deep);
+  color: #c3cee6;
+  padding: 48px 6vw 30px 6vw;
+  font-size: 0.9rem;
+}
+
+.footGrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer a {
+  color: #9db4e6;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer a:hover {
+  color: var(--surface);
+}
+
+.wordmark {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--surface);
+}
+
+.wordmark span {
+  color: #9db4e6;
+}
+
+.tagline {
+  max-width: 280px;
+  margin-top: 10px;
+}
+
+.reachLabel {
+  font-family: var(--font-mono), monospace;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  color: #9db4e6;
+  margin-bottom: 8px;
+}
+
+.fine {
+  margin-top: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  color: rgba(195, 206, 230, 0.55);
+}

@@ -1,0 +1,20 @@
+.card {
+  position: relative;
+  flex: 0 0 220px;
+  height: 290px;
+  border-radius: calc(var(--radius) * 0.7);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 14px rgba(15, 38, 87, 0.08);
+}
+
+.card :global(img) {
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .card {
+    flex: 0 0 160px;
+    height: 210px;
+  }
+}

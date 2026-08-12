@@ -1,0 +1,57 @@
+.section {
+  padding: 96px 6vw;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.sectionHead {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  color: var(--cobalt);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.sectionHead h2 {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+  color: var(--ink);
+}
+
+.sectionHead p {
+  color: var(--ink-soft);
+  margin-top: 10px;
+  font-size: 1.05rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Exactly 5 rooms: the last card always lands alone in the final row at
+   the 2- and 3-column tiers. Span it so that row fills completely instead
+   of leaving an empty gap. No-op below 640px, where there's only 1 column. */
+@media (min-width: 640px) {
+  .grid > :last-child {
+    grid-column: span 2;
+  }
+}

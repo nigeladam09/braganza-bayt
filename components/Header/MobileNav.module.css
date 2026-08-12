@@ -1,0 +1,69 @@
+.wrap {
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    display: block;
+  }
+}
+
+.toggle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bars span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--ink);
+}
+
+.close {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.panel {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgba(15, 38, 87, 0.14);
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  padding: 8px;
+  z-index: 50;
+}
+
+.panel a {
+  padding: 12px 14px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: calc(var(--radius) * 0.5);
+}
+
+.panel a:hover {
+  background: var(--paper);
+  color: var(--cobalt);
+}
