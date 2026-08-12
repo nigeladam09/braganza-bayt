@@ -1,6 +1,6 @@
 .hero {
-  background: var(--cobalt-deep);
-  color: var(--surface);
+  background: var(--azulejo-deep);
+  color: var(--tile-white);
   padding: 72px 6vw 64px 6vw;
 }
 
@@ -19,7 +19,7 @@
 
 .eyebrow {
   font-family: var(--font-mono), monospace;
-  color: #9db4e6;
+  color: var(--brass);
   font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -29,20 +29,20 @@
 .headline {
   font-size: clamp(1.9rem, 2.6vw + 1rem, 2.7rem);
   line-height: 1.15;
-  color: var(--surface);
+  color: var(--tile-white);
 }
 
 .tagline {
   display: inline-block;
   margin-top: 10px;
-  color: #9db4e6;
+  color: var(--brass);
   font-size: 0.56em;
   font-weight: 600;
 }
 
 .lede {
   font-size: 1.08rem;
-  color: #d3dcf2;
+  color: var(--on-dark);
   margin-top: 20px;
   line-height: 1.6;
 }
@@ -76,22 +76,22 @@
 }
 
 .btnPrimary {
-  background: var(--surface);
-  color: var(--cobalt-deep);
+  background: var(--brass);
+  color: var(--ink);
 }
 
 .btnPrimary:hover {
-  background: #dfe6f6;
+  background: var(--brass-bright);
 }
 
 .btnOutline {
   background: transparent;
-  color: var(--surface);
-  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--tile-white);
+  border-color: rgba(247, 244, 236, 0.5);
 }
 
 .btnOutline:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(247, 244, 236, 0.08);
 }
 
 .hostAvatars {
@@ -105,7 +105,7 @@
   font-family: var(--font-script), cursive;
   font-weight: 700;
   font-size: 1.3rem;
-  color: #d3dcf2;
+  color: var(--on-dark);
   margin-left: 4px;
 }
 
@@ -143,11 +143,11 @@
 .tileBand {
   height: 12px;
   width: 100%;
-  background-image: linear-gradient(45deg, var(--surface) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--surface) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--surface) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--surface) 75%);
+  background-image: linear-gradient(45deg, var(--tile-white) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--tile-white) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--tile-white) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--tile-white) 75%);
   background-size: 12px 12px;
   background-position: 0 0, 0 6px, 6px -6px, -6px 0px;
-  background-color: var(--cobalt);
+  background-color: var(--azulejo);
 }

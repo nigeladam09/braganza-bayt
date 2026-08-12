@@ -1,5 +1,5 @@
 .section {
-  background: var(--paper);
+  background: var(--limewash);
   overflow: hidden;
   padding: 96px 6vw 60px 6vw;
 }
@@ -44,7 +44,7 @@
   font-family: var(--font-display), sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--cobalt);
+  color: var(--azulejo);
 }
 
 .lbl {

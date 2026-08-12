@@ -1,5 +1,5 @@
 .card {
-  background: var(--surface);
+  background: var(--tile-white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
@@ -10,7 +10,7 @@
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 32px rgba(15, 38, 87, 0.1);
+  box-shadow: 0 16px 32px rgba(42, 35, 28, 0.1);
 }
 
 .photoFrame {
@@ -44,7 +44,7 @@
 .location {
   font-family: var(--font-mono), monospace;
   font-size: 0.76rem;
-  color: var(--cobalt);
+  color: var(--azulejo);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 10px;
@@ -66,7 +66,7 @@
 .amenities span {
   font-family: var(--font-mono), monospace;
   font-size: 0.72rem;
-  background: var(--paper);
+  background: var(--limewash);
   border: 1px solid var(--line);
   padding: 5px 10px;
   border-radius: var(--radius-full);
@@ -77,14 +77,14 @@
   align-self: flex-start;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--cobalt);
+  color: var(--azulejo);
   text-decoration: none;
-  border-bottom: 1px solid var(--cobalt);
+  border-bottom: 1px solid var(--azulejo);
   padding-bottom: 2px;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .bookLink:hover {
-  color: var(--cobalt-bright);
-  border-color: var(--cobalt-bright);
+  color: var(--terracotta);
+  border-color: var(--terracotta);
 }

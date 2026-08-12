@@ -4,7 +4,7 @@
   height: 52px;
   border-radius: var(--radius-full);
   padding: 0;
-  border: 2px solid var(--surface);
+  border: 2px solid var(--tile-white);
   background: none;
   cursor: pointer;
   overflow: hidden;
@@ -29,7 +29,7 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(15, 38, 87, 0.72);
+  background: rgba(18, 50, 57, 0.85);
   z-index: 1100;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@
 }
 
 .card {
-  background: var(--surface);
+  background: var(--tile-white);
   border-radius: var(--radius);
   max-width: 440px;
   width: 100%;
@@ -68,7 +68,7 @@
   height: 120px;
   border-radius: var(--radius-full);
   overflow: hidden;
-  border: 3px solid var(--cobalt);
+  border: 3px solid var(--azulejo);
   margin: 0 auto 16px auto;
 }
 

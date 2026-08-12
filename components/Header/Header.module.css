@@ -1,5 +1,5 @@
 .header {
-  background: var(--surface);
+  background: var(--tile-white);
   color: var(--ink);
   padding: 0 6vw;
   height: 72px;
@@ -21,7 +21,7 @@
 }
 
 .wordmark span {
-  color: var(--cobalt);
+  color: var(--terracotta);
 }
 
 .nav {
@@ -46,5 +46,5 @@
 }
 
 .nav a:hover {
-  color: var(--cobalt);
+  color: var(--azulejo);
 }
