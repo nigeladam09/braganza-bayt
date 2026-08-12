@@ -5,6 +5,7 @@
 - Node 20+, pnpm. Commands: `pnpm install`, `pnpm dev`, `pnpm build` (outputs `out/`), `pnpm preview` (serves `out/`; static export has no `next start`).
 - Structure:
   - `app/` — root layout, fonts, global tokens (`globals.css`), the single page.
+  - `app/fonts/` — self-hosted woff2 files loaded via `next/font/local`. Do not switch to `next/font/google`: it fetches from Google's CDN at build time and intermittently 404s on stale edge-cached URLs, breaking deploys.
   - `components/<Name>/` — one component per folder, co-located `.module.css`. Shared UI state (modal, lightbox, booking selection) lives in a `context.tsx` provider per feature.
   - `lib/*.ts` — all site content (rooms, reviews, hosts, guest photos, group-stay table, WhatsApp message logic).
   - `public/images/{hosts,rooms/<slug>,kitchen,guests}/` — every photo as a real file, no base64.
