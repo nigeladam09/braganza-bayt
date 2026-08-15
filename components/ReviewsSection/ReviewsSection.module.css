@@ -10,6 +10,15 @@
   text-align: center;
 }
 
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  color: var(--brass);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
 .sectionHead h2 {
   font-size: clamp(1.5rem, 1.2vw + 1rem, 1.9rem);
   line-height: 1.25;

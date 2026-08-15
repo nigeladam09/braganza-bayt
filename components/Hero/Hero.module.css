@@ -8,7 +8,9 @@
   max-width: 1320px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  /* The photo column is narrower than the copy column: the mural is portrait,
+     so width drives its height, and an even split made it tower over the copy. */
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 56px;
   align-items: center;
 }
@@ -109,15 +111,30 @@
   margin-left: 4px;
 }
 
+/* The mural photo is portrait (831x1280), so the frame is portrait too — a
+   landscape frame would crop the painting down to a strip. 4/5 is just tall
+   enough to hold the whole mural; object-position parks the crop near the top
+   of the wall so the painted "Braganza Bayt" lettering stays in and only the
+   foreground plants get trimmed. */
 .photoFrame {
   position: relative;
-  aspect-ratio: 4 / 3.1;
+  aspect-ratio: 4 / 5;
+  /* Portrait width drives height, so cap the width to keep the frame from
+     towering over the copy; the auto margin holds it against the right gutter.
+     width: 100% is load-bearing — an auto inline margin cancels a grid item's
+     stretch, and shrink-to-fit collapses this box to zero (its only child is
+     the absolutely positioned fill image). */
+  width: 100%;
+  max-width: 430px;
+  margin-left: auto;
   border-radius: var(--radius);
   overflow: hidden;
+  background: var(--azulejo);
 }
 
 .photoFrame :global(img) {
   object-fit: cover;
+  object-position: center 8%;
 }
 
 @media (max-width: 900px) {
@@ -128,7 +145,8 @@
     max-width: none;
   }
   .photoFrame {
-    aspect-ratio: 16 / 10;
+    /* Stacked under the copy — centre it instead of hugging the right gutter. */
+    margin-inline: auto;
   }
 }
 

@@ -10,6 +10,7 @@ export default function ReviewsSection() {
   return (
     <section className={styles.section} id="reviews">
       <div className={styles.sectionHead}>
+        <p className={styles.eyebrow}>What Past Guests Say</p>
         <h2>
           {aggregateRating.count} reviews, {aggregateRating.average}★ average across all five
           stays
