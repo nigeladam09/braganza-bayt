@@ -36,7 +36,7 @@
   }
 }
 
-nav a {
+.nav a {
   color: var(--tile-white);
   text-decoration: none;
   margin-left: 28px;
