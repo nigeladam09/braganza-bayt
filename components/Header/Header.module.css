@@ -16,7 +16,7 @@
   font-family: 'Fraunces', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--tile-white);
+  color: var(--ink);
   letter-spacing: 0.01em;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .nav a {
-  color: var(--tile-white);
+  color: var(--ink-soft);
   text-decoration: none;
   margin-left: 28px;
   font-size: 0.92rem;
