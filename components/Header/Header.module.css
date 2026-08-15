@@ -13,15 +13,15 @@
 }
 
 .wordmark {
-  font-family: var(--font-display), sans-serif;
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: var(--ink);
-  letter-spacing: -0.01em;
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--tile-white);
+  letter-spacing: 0.01em;
 }
 
 .wordmark span {
-  color: var(--terracotta);
+  color: var(--brass);
 }
 
 .nav {
@@ -36,13 +36,14 @@
   }
 }
 
-.nav a {
-  color: var(--ink-soft);
+nav a {
+  color: var(--tile-white);
   text-decoration: none;
   margin-left: 28px;
   font-size: 0.92rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.88;
 }
 
 .nav a:hover {
