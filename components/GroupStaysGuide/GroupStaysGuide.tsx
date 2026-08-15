@@ -5,6 +5,7 @@ export default function GroupStaysGuide() {
   return (
     <section id="group-stays" className={styles.section}>
       <div className={styles.sectionHead}>
+        <p className={styles.eyebrow}>Traveling As A Group?</p>
         <h2>Book multiple rooms, all under one roof</h2>
         <p>
           All 5 rooms sit within the same property — so instead of splitting your group across
