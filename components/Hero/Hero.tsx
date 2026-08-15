@@ -1,10 +1,8 @@
 import Image from "next/image";
 import { hosts } from "@/lib/hosts";
-import { rooms } from "@/lib/rooms";
+import { heroPhoto } from "@/lib/hero";
 import HostAvatarButton from "@/components/HostModal/HostAvatarButton";
 import styles from "./Hero.module.css";
-
-const heroPhoto = rooms.find((room) => room.slug === "rainforest-suite")!.gallery[0];
 
 export default function Hero() {
   return (

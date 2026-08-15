@@ -53,8 +53,9 @@
 }
 
 .rowHead {
-  background: var(--limewash);
-  color: var(--ink-soft);
+  background: var(--azulejo);
+  color: var(--tile-white);
+  border-bottom-color: var(--azulejo);
   text-transform: uppercase;
   font-size: 0.72rem;
   letter-spacing: 0.05em;
