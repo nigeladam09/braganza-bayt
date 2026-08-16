@@ -34,17 +34,19 @@ export default function Hero() {
                 <span className={styles.hostAvatarsLabel}>Meet your hosts</span>
               </div>
               <div className={styles.badges}>
-                <div className={styles.badge}>
+                <div className={styles.badgeCard}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={guestFavorite}
                     alt="Guest favorite — one of the most loved homes on Airbnb"
                   />
                 </div>
-                <div className={styles.badge}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={superhost} alt="Airbnb Superhost, 5 stars" />
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={superhost}
+                  alt="Airbnb Superhost, 5 stars"
+                  className={styles.badgePlain}
+                />
               </div>
             </div>
           </div>
