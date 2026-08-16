@@ -1,12 +1,10 @@
 .header {
-  background: var(--tile-white);
-  color: var(--ink);
-  padding: 0 6vw;
-  height: 72px;
+  background: var(--azulejo);
+  color: var(--tile-white);
+  padding: 22px 6vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
   z-index: 40;
@@ -47,5 +45,6 @@
 }
 
 .nav a:hover {
-  color: var(--azulejo);
+  opacity: 1;
+  text-decoration: underline;
 }

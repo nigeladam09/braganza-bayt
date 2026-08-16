@@ -9,6 +9,7 @@ export default function GuestGallerySection() {
   return (
     <section className={styles.section} id="guest-gallery">
       <div className={styles.sectionHead}>
+        <p className={styles.eyebrow}>Our Beautiful Guests</p>
         <h2>Moments from past stays</h2>
         <p>A few snapshots from guests who&apos;ve stayed with us at Braganza Bayt.</p>
       </div>

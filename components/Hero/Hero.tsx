@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { hosts } from "@/lib/hosts";
-import { heroPhoto } from "@/lib/hero";
+import { guestFavorite, superhost } from "@/lib/badges";
 import HostAvatarButton from "@/components/HostModal/HostAvatarButton";
 import styles from "./Hero.module.css";
 
@@ -12,7 +11,8 @@ export default function Hero() {
           <div className={styles.copy}>
             <div className={styles.eyebrow}>Direct booking · No commission · No middleman</div>
             <h1 className={styles.headline}>
-              A harmonious cluster of stylish rooms.
+              A harmonious cluster of stylish rooms, each crafted with comfort, calm, and a sense
+              of home.
               <br />
               <span className={styles.tagline}>Family-run, and it shows.</span>
             </h1>
@@ -33,16 +33,20 @@ export default function Hero() {
                 <HostAvatarButton host={hosts.amelia} />
                 <span className={styles.hostAvatarsLabel}>Meet your hosts</span>
               </div>
+              <div className={styles.badges}>
+                <div className={styles.badge}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={guestFavorite}
+                    alt="Guest favorite — one of the most loved homes on Airbnb"
+                  />
+                </div>
+                <div className={styles.badge}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={superhost} alt="Airbnb Superhost, 5 stars" />
+                </div>
+              </div>
             </div>
-          </div>
-          <div className={styles.photoFrame}>
-            <Image
-              src={heroPhoto.src}
-              alt={heroPhoto.alt}
-              fill
-              sizes="(max-width: 900px) 100vw, 44vw"
-              priority
-            />
           </div>
         </div>
       </div>
