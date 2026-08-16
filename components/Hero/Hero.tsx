@@ -11,8 +11,9 @@ export default function Hero() {
           <div className={styles.copy}>
             <div className={styles.eyebrow}>Direct booking · No commission · No middleman</div>
             <h1 className={styles.headline}>
-              A harmonious cluster of stylish rooms, each crafted with comfort, calm, and a sense
-              of home.
+              A harmonious cluster of stylish rooms, each
+              <br />
+              crafted with comfort, calm, and a sense of home.
               <br />
               <span className={styles.tagline}>Family-run, and it shows.</span>
             </h1>
