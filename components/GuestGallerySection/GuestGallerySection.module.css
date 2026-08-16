@@ -13,6 +13,15 @@
   text-align: center;
 }
 
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  color: var(--brass);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
 .sectionHead h2 {
   font-size: clamp(1.7rem, 1.6vw + 1rem, 2.2rem);
   color: var(--ink);
