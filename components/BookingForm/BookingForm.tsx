@@ -125,7 +125,7 @@ export default function BookingForm() {
           <input
             type="tel"
             id="whatsapp"
-            placeholder="+971 5X XXX XXXX"
+            placeholder="+91 XXXXXXXXXX"
             required
             value={whatsapp}
             onChange={(e) => setWhatsapp(e.target.value)}
