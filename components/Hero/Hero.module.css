@@ -106,42 +106,6 @@
   margin-left: 4px;
 }
 
-.badges {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-left: 6px;
-}
-
-/* Guest Favorite still needs a light card behind it: the source image is a
-   flat JPEG screenshot, so its black text has no contrast against the dark
-   hero once its background is keyed to transparent. */
-.badgeCard {
-  display: inline-flex;
-  align-items: center;
-  height: 48px;
-  padding: 6px 12px;
-  border-radius: var(--radius);
-  background: var(--tile-white);
-  flex-shrink: 0;
-}
-
-.badgeCard img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
-
-/* Superhost badge ships with real transparency, so it sits directly on the
-   hero background at the same height as the buttons beside it. */
-.badgePlain {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
 @media (max-width: 900px) {
   .copy {
     max-width: none;
@@ -153,10 +117,6 @@
     margin-left: 0;
     margin-top: 6px;
     width: 100%;
-  }
-  .badges {
-    margin-left: 0;
-    margin-top: 6px;
   }
 }
 

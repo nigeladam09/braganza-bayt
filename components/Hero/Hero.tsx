@@ -1,5 +1,4 @@
 import { hosts } from "@/lib/hosts";
-import { guestFavorite, superhost } from "@/lib/badges";
 import HostAvatarButton from "@/components/HostModal/HostAvatarButton";
 import styles from "./Hero.module.css";
 
@@ -33,20 +32,6 @@ export default function Hero() {
                 <HostAvatarButton host={hosts.nigel} />
                 <HostAvatarButton host={hosts.amelia} />
                 <span className={styles.hostAvatarsLabel}>Meet your hosts</span>
-              </div>
-              <div className={styles.badges}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={guestFavorite}
-                  alt="Airbnb Guest favourite, 5.0 rating"
-                  className={styles.badgePlain}
-                />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={superhost}
-                  alt="Airbnb Superhost, 5 stars"
-                  className={styles.badgePlain}
-                />
               </div>
             </div>
           </div>
