@@ -8,9 +8,10 @@
   max-width: none;
   margin-bottom: 48px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+  text-align: center;
+  gap: 28px;
 }
 
 .sectionHeadText {
@@ -18,21 +19,16 @@
 }
 
 .sectionHeadBadge {
-  height: 160px;
+  height: 460px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
   flex-shrink: 0;
 }
 
 @media (max-width: 780px) {
-  .sectionHead {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
   .sectionHeadBadge {
-    height: 125px;
-    align-self: center;
+    height: 260px;
   }
 }
 
