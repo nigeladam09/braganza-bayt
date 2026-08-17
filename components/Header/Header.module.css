@@ -48,3 +48,11 @@
   opacity: 1;
   text-decoration: underline;
 }
+
+/* .nav is nowrap, so tighten it before six links overflow on narrow desktops. */
+@media (max-width: 900px) {
+  .nav a {
+    margin-left: 18px;
+    font-size: 0.84rem;
+  }
+}
