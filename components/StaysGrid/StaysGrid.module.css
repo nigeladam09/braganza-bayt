@@ -5,8 +5,35 @@
 }
 
 .sectionHead {
-  max-width: 640px;
+  max-width: none;
   margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.sectionHeadText {
+  max-width: 640px;
+}
+
+.sectionHeadBadge {
+  height: 92px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (max-width: 780px) {
+  .sectionHead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .sectionHeadBadge {
+    height: 72px;
+    align-self: center;
+  }
 }
 
 .eyebrow {
