@@ -18,6 +18,8 @@
   flex-shrink: 0;
 }
 
+/* Badge sized to sit comfortably in the empty space beside the heading
+   without dominating the section (previous sizes felt too large). */
 .sectionHeadBadge {
   flex: 1;
   height: 130px;
