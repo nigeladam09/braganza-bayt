@@ -8,27 +8,35 @@
   max-width: none;
   margin-bottom: 48px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 28px;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .sectionHeadText {
   max-width: 640px;
-}
-
-.sectionHeadBadge {
-  height: 460px;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
   flex-shrink: 0;
 }
 
-@media (max-width: 780px) {
+.sectionHeadBadge {
+  flex: 1;
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+  object-position: right center;
+}
+
+@media (max-width: 900px) {
+  .sectionHead {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+  }
   .sectionHeadBadge {
-    height: 260px;
+    height: 220px;
+    width: auto;
+    object-position: center;
   }
 }
 
