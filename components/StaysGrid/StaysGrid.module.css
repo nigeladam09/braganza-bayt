@@ -5,8 +5,41 @@
 }
 
 .sectionHead {
-  max-width: 640px;
+  max-width: none;
   margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.sectionHeadText {
+  max-width: 640px;
+  flex-shrink: 0;
+}
+
+/* Badge sized to sit comfortably in the empty space beside the heading
+   without dominating the section (previous sizes felt too large). */
+.sectionHeadBadge {
+  flex: 1;
+  height: 130px;
+  width: 100%;
+  object-fit: contain;
+  object-position: right center;
+}
+
+@media (max-width: 900px) {
+  .sectionHead {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+  }
+  .sectionHeadBadge {
+    height: 100px;
+    width: auto;
+    object-position: center;
+  }
 }
 
 .eyebrow {
