@@ -1,12 +1,15 @@
 import styles from "./Header.module.css";
 import MobileNav from "./MobileNav";
 
+// Root-relative so they still resolve correctly from sub-pages like /privacy.
+// On the home page these stay same-document fragment jumps, so smooth scroll is preserved.
 const NAV_LINKS = [
-  { href: "#stays", label: "Stays" },
-  { href: "#group-stays", label: "Groups" },
-  { href: "#book", label: "Book" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#stays", label: "Stays" },
+  { href: "/#group-stays", label: "Groups" },
+  { href: "/#book", label: "Book" },
+  { href: "/#reviews", label: "Reviews" },
+  { href: "/#contact", label: "Contact" },
+  { href: "/privacy", label: "Privacy" },
 ];
 
 export default function Header() {

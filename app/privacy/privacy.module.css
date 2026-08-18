@@ -1,0 +1,90 @@
+.page {
+  padding: 96px 6vw;
+  background: var(--limewash);
+}
+
+.prose {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  color: var(--brass);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.prose h1 {
+  font-size: clamp(1.9rem, 2.4vw + 1rem, 2.7rem);
+  color: var(--ink);
+}
+
+.updated {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin: 0 0 8px 0;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  font-size: clamp(1.15rem, 1vw + 0.9rem, 1.4rem);
+  color: var(--ink);
+  margin-bottom: 0.5em;
+}
+
+.section p {
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin: 0 0 14px 0;
+}
+
+.section strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.section ul {
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin: 0 0 14px 0;
+  padding-left: 22px;
+}
+
+.section li {
+  margin-bottom: 6px;
+}
+
+.section li::marker {
+  color: var(--brass);
+}
+
+.section a {
+  color: var(--terracotta);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s ease;
+}
+
+.section a:hover {
+  color: var(--terracotta-deep);
+}
+
+@media (max-width: 520px) {
+  .page {
+    padding: 64px 6vw;
+  }
+
+  .section {
+    margin-top: 32px;
+  }
+}
