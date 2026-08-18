@@ -20,7 +20,7 @@ Braganza Bayt is the marketing and booking site for a small guesthouse in **Cand
 
 ## Project structure
 
-- `app/` — root layout, fonts, global design tokens, and the single page.
+- `app/` — root layout, fonts, global design tokens, the home page, and `app/privacy/` (privacy policy route).
 - `components/<Name>/` — one component per folder, each with co-located styles; shared UI state (modals, lightbox, booking selection) lives in per-feature context providers.
 - `lib/*.ts` — all site content: rooms, reviews, hosts, guest photos, group-stay details, and WhatsApp booking logic.
 - `public/images/` — room, host, kitchen, and guest photos.

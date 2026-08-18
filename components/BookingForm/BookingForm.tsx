@@ -16,6 +16,7 @@ export default function BookingForm() {
   const [whatsapp, setWhatsapp] = useState("");
   const [email, setEmail] = useState("");
   const [note, setNote] = useState("");
+  const [consent, setConsent] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
   const [today, setToday] = useState("");
 
@@ -33,7 +34,17 @@ export default function BookingForm() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
-    const fields = { rooms: selectedRooms, name, checkin, checkout, guests, whatsapp, email, note };
+    const fields = {
+      rooms: selectedRooms,
+      name,
+      checkin,
+      checkout,
+      guests,
+      whatsapp,
+      email,
+      note,
+      consent,
+    };
     const validation = validateBooking(fields);
     if (!validation.ok) {
       alert(validation.message);
@@ -154,9 +165,29 @@ export default function BookingForm() {
         />
       </div>
 
+      <label className={styles.consent}>
+        <input
+          type="checkbox"
+          required
+          checked={consent}
+          onChange={(e) => setConsent(e.target.checked)}
+        />
+        <span>
+          I agree to the{" "}
+          <a href="/privacy" target="_blank" rel="noreferrer">
+            Privacy Policy
+          </a>
+          .
+        </span>
+      </label>
+
       <button type="submit" className={styles.submitBtn}>
         Send inquiry via WhatsApp →
       </button>
+      <p className={styles.privacyNote}>
+        Your inquiry opens in WhatsApp — Meta handles that message. Nothing is stored on this
+        site.
+      </p>
       <div className={`${styles.confirmMsg} ${showConfirm ? styles.show : ""}`}>
         WhatsApp should be opening in a new tab with your inquiry pre-filled. If it didn&apos;t
         open, check your pop-up blocker, or email us directly at the address in the footer.

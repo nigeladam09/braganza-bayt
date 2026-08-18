@@ -9,6 +9,7 @@ export interface BookingFields {
   whatsapp: string;
   email?: string;
   note?: string;
+  consent: boolean;
 }
 
 export type BookingValidation = { ok: true } | { ok: false; message: string };
@@ -19,6 +20,9 @@ export function validateBooking(fields: BookingFields): BookingValidation {
   }
   if (fields.checkout <= fields.checkin) {
     return { ok: false, message: "Check-out date needs to be after check-in date." };
+  }
+  if (!fields.consent) {
+    return { ok: false, message: "Please agree to the Privacy Policy before sending your inquiry." };
   }
   return { ok: true };
 }

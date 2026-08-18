@@ -43,6 +43,17 @@ export const metadata: Metadata = {
   title: "Braganza Bayt — Book Your Stay Direct",
   description:
     "A family-run cluster of five stylish rooms in Candolim, North Goa. Book direct — no commission, no middleman.",
+  // Icons live in public/ rather than app/ because site.webmanifest references
+  // the android-chrome PNGs by absolute root path.
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

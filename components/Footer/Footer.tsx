@@ -27,7 +27,8 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.fine}>
-        © <YearStamp /> Braganza Bayt. All rights reserved.
+        © <YearStamp /> Braganza Bayt. All rights reserved. ·{" "}
+        <a href="/privacy">Privacy Policy</a>
       </div>
     </footer>
   );
